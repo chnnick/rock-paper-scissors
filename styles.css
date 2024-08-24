@@ -5,29 +5,24 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   background-color: black;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
-button {
-  height: 10vh;
-  width: 15vw;
-  outline: none;
+#scoreboard {
+  border: 1px solid yellow;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#rock:hover {
-  background-color: red;
-}
-
-#paper:hover {
-  background-color: green;
-}
-
-#scissors:hover {
-  background-color: blue;
+#game-results {
+  font-size: 30px;
+  font-style: italic;
 }
 
 .result-style {
