@@ -1,4 +1,9 @@
 const choices = ["rock", "paper", "scissors"];
+let computer = getComputerChoice();
+let human = getHumanChoice();
+console.log(computer);
+console.log(human);
+
 
 function getComputerChoice() {
   const roll = Math.floor(Math.random() * 3);
@@ -7,21 +12,24 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   const player = prompt(("Choose either: ROCK, PAPER, or SCISSORS"), "");
-  player = toLowerCase(player);
+  console.log(player);
+  player.toLowerCase();
+  console.log(player);
   if (checkInput(player)) {
-    alert(`You chose ${player}`);
+    return player;
   }
   else {
     alert(`Please put in correct input`);
+    getHumanChoice();
   }
 }
 
 function checkInput(input) {
   let valid = false;
-  for (choice of choices) {
-    if (input === choice) {
+  for (const choice of choices) {
+    if (choice === input) {
       valid = true;
     }
   }
-  return true;
+  return valid;
 }
