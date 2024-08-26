@@ -96,3 +96,4 @@ function playGame() {
     results.innerHTML = resultText;
   }
 }
+
