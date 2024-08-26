@@ -92,3 +92,6 @@ function displayMsg(message) {
   resultMsg.style = "color: yellow; font-family: Impact";
   scoreboard.appendChild(resultMsg);
 }
+
+updateScores();
+displayMsg("Press Rock, Paper, Or Scissors above to play!")
